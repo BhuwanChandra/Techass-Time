@@ -1,0 +1,145 @@
+.nav-wrapper a {
+    color: #000000 !important;
+}
+
+nav ul a,
+nav ul button {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+nav ul a {
+    padding: 0 10px !important;
+    margin-right: 10px;
+}
+
+.sidenav li button {
+    margin-left: 2rem;
+}
+
+.brand-logo {
+    font-family: 'Grand Hotel', cursive;
+    margin-left: 30px;
+    font-size: 3rem !important;
+}
+
+.my-card{
+    margin-top: 30px;
+}
+
+.auth-card {
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 15px auto;
+}
+
+.input-field input:focus {
+    border-bottom: 1px solid #2990f1 !important;
+    box-shadow: 0 1px 0 0 #2990f1 !important;
+}
+
+[type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
+    font-size: 1.5rem !important;
+    padding-left: 50px !important;
+}
+
+[type="radio"]+span:before, [type="radio"]+span:after {
+    margin: 8px !important;
+}
+
+.img-item {
+    width: 30%;
+    max-height: 150px;
+    background-color: #b4cace;
+}
+
+.test-card {
+    max-width: 700px;
+    margin: 15px auto;
+    height: max-content;
+}
+
+#toast-container {
+    top: 70px !important;
+    right: 20px !important;
+    left: auto !important;
+}
+
+i {
+    cursor: pointer;
+}
+
+.collection-header {
+    height: 7rem !important;
+}
+
+.profile-test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ques-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ques-btns .q-btn {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.test-start {
+    min-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.test-result {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+.result-ans {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.result-card {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.p-card {
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.result-ans > h6 {
+    margin-top: 1rem;
+}
+
+.test-start > h3 {
+    margin-top: 10rem;
+    font-weight: 500; 
+}
+
+.levels {
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
