@@ -8,7 +8,7 @@ const Quizz = ({ qs, fetchQuestions, setQstate, submit, saveRecord }) => {
   const history = useHistory();
   const [ques, setQues] = useState([]);
   const [cques, setCques] = useState(0);
-  const [time, setTime] = useState(30);
+  const [time, setTime] = useState(60);
 
   useEffect(() => {
     let isMounted = false;
@@ -17,7 +17,7 @@ const Quizz = ({ qs, fetchQuestions, setQstate, submit, saveRecord }) => {
         setTime(time - 1);
       }, 1000);
     } else if (qs.testState === false) {
-      if (!isMounted) setTime(30);
+      if (!isMounted) setTime(60);
     }
     return () => {
       isMounted = true;
