@@ -8,7 +8,7 @@ const Question = ({no, question, nextQues, prevQues, ans, Submit, SetAns}) => {
     return (
         <div className="test-card">
             <ul className="collection with-header">
-                <li className="collection-header"><h5>{question.question}</h5></li>
+                <li className="collection-header"><h5><strong>{`Q ${no+1}. `}</strong>{question.question}</h5></li>
                 <li className="collection-item">
                     <label>
                         <input type="radio" name="question1" onChange={e => SetAns(e.target.value, no)} value={question.optionA} checked={ans[no] === question.optionA} className="with-gap"/>

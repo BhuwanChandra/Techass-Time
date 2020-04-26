@@ -30,13 +30,13 @@ app.use(require("./routes/auth"));
 app.use(require("./routes/test"));
 
 
-// if (process.env.NODE_ENV == "production") {
-//     const path = require('path');
-//     app.use(express.static(path.join(__dirname, '/client/build')));
-//     app.get('/', (req, res) => {
-//         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-//     });
-// }
+if (process.env.NODE_ENV == "production") {
+    const path = require('path');
+    app.use(express.static(path.join(__dirname, '/client/build')));
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+}
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT} `);
