@@ -64,6 +64,7 @@ nav ul a {
     top: 70px !important;
     right: 20px !important;
     left: auto !important;
+    font-weight: 500 !important;
 }
 
 i {

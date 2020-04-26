@@ -23,6 +23,11 @@ router.post('/saverecord', requireLogin, (req, res) => {
   User.findOne({'_id': req.user._id})
   .select('-password')
   .then(response => {
+    if (!response.isVerified) {
+      return res.status(401).json({
+        error: `Please verify your email to save your Quiz record.`
+      });
+    }
     console.log(response);
     let cnt = 0;
     if(response.tests.length > 0)

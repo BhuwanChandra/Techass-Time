@@ -19,15 +19,11 @@ mongoose.connection.on("connected", () => {
     console.log("connected to database!!!");
 });
 
-mongoose.connection
-    .collection("users")
-    .createIndex({ 'tests.level': 1 }, { unique: true })
-    .catch(err => console.log(err));
-
 app.use(express.json());
 
 app.use(require("./routes/auth"));
 app.use(require("./routes/test"));
+app.use(require("./routes/verifyToken"));
 
 
 if (process.env.NODE_ENV == "production") {

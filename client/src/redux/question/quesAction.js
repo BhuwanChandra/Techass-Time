@@ -68,10 +68,17 @@ export const saveRecord = (questions) => {
             console.log(response);
             localStorage.setItem("user", JSON.stringify(response));
             dispatch(authUser(response));
+            if (response.error)
+              M.toast({ html: response.error, classes: '#e53935 red darken-1' });
+            else
             M.toast({ html: "Result saved successfully!", classes: "#43a047 green darken-1" });
           })
           .catch(error => {
             console.log(error);
+            M.toast({
+              html: error.message,
+              classes: "#43a047 green darken-1"
+            });
           });
     }
 }
